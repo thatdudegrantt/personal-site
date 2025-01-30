@@ -1,13 +1,19 @@
+"use client";
+
 export default function Navbar() {
+    const handleThemeChange = (theme) => {
+        document.documentElement.setAttribute('data-theme', theme);
+    };
+
     return (
         <div className="navbar bg-base-100 shadow-lg">
             <div className="flex-1">
-                <a href="/" className="btn btn-ghost normal-case text-xl">
+                <a href="/" className="btn btn-ghost normal-case text-xl text-base-content">
                     My Website
                 </a>
             </div>
             <div className="flex-none">
-                <ul className="menu menu-horizontal px-1">
+                <ul className="menu menu-horizontal px-1 text-base-content">
                     <li>
                         <a href="/">Home</a>
                     </li>
@@ -22,6 +28,13 @@ export default function Navbar() {
                     </li>
                 </ul>
             </div>
+            <select className="select select-bordered text-base-content" onChange={(e) => handleThemeChange(e.target.value)}>
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+                <option value="cupcake">Cupcake</option>
+                <option value="cupcake">Synthwave</option>
+                <option value="cupcake">Coffee</option>
+            </select>
         </div>
     );
 }
