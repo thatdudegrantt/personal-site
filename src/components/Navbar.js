@@ -32,8 +32,8 @@ export default function Navbar() {
                 <option value="light">Light</option>
                 <option value="dark">Dark</option>
                 <option value="cupcake">Cupcake</option>
-                <option value="cupcake">Synthwave</option>
-                <option value="cupcake">Coffee</option>
+                <option value="synthwave">Synthwave</option>
+                <option value="coffee">Coffee</option>
             </select>
         </div>
     );
