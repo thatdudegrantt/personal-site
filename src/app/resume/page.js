@@ -1,11 +1,32 @@
-import Navbar from "@/components/Navbar";
+"use client"; // Required for using React hooks
+
+import { useState, useEffect } from 'react';
 
 export default function Resume() {
+    const [isClient, setIsClient] = useState(false);
+
+    useEffect(() => {
+        setIsClient(true); // Set to true once the component mounts on the client
+    }, []);
+
     return (
-        <div>
-            <Navbar />
-            <h1>Resume</h1>
-            <p>Resume goes here Grant</p>
+        <div className="p-8">
+            <h1 className="text-3xl font-bold mb-6"></h1>
+            {isClient && (
+                <div className="w-full h-screen">
+                    <iframe
+                        src="/resume.pdf"
+                        width="100%"
+                        height="100%"
+                        style={{border: 'none'}}
+                    >
+                        Your browser does not support PDFs. <a href="/resume.pdf">Download my resume</a>.
+                    </iframe>
+                </div>
+            )}
+            <p className="mt-4 text-sm text-gray-600">
+                Can't view the PDF? <a href="/resume.pdf" download className="text-blue-500">Download it here</a>.
+            </p>
         </div>
     );
 }

@@ -26,6 +26,9 @@ export default function Navbar() {
                     <li>
                         <a href="/contact">Contact</a>
                     </li>
+                    <li>
+                        <a href="/resume">Resume</a>
+                    </li>
                 </ul>
             </div>
             <select className="select select-bordered text-base-content" onChange={(e) => handleThemeChange(e.target.value)}>
