@@ -1,9 +1,9 @@
 
 export default function Projects() {
     return (
-        <div>
-            <h1>My Projects</h1>
-            <p>My projects are listed below, also link github</p>
+        <div className={"bg-base-200"}>
+            <h1 className={"text-base-content"}>My Projects</h1>
+            <p className={"text-base-content"}>My projects are listed below, also link github</p>
         </div>
     );
 }

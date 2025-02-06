@@ -1,4 +1,4 @@
-"use client"; // Required for using React hooks
+"use client";
 
 import { useState, useEffect } from 'react';
 
@@ -6,11 +6,11 @@ export default function Resume() {
     const [isClient, setIsClient] = useState(false);
 
     useEffect(() => {
-        setIsClient(true); // Set to true once the component mounts on the client
+        setIsClient(true);
     }, []);
 
     return (
-        <div className="p-8">
+        <div className="p-8 bg-base-200">
             <h1 className="text-3xl font-bold mb-6"></h1>
             {isClient && (
                 <div className="w-full h-screen">
