@@ -1,15 +1,18 @@
 "use client";
 
 import { ThemeProvider, useTheme} from "next-themes";
-import {useEffect} from "react";
+import {useEffect, useState} from "react";
 
 export default function ThemeProviderWrapper({ children }) {
+    const [mounted, setMounted] = useState(false);
     useEffect(() => {
-        const savedTheme = document.cookie.split("; ").find(row => row.startsWith("theme="))?.split("=")[1];
-        if (savedTheme) {
-            document.documentElement.setAttribute("data-theme", savedTheme);
-        }
+        setMounted(true);
     }, []);
+
+    if (!mounted) {
+        return <div className="bg-base-100 min-h-screen"></div>; // Prevents flashing
+    }
+
     return (
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem={true}>
             {children}

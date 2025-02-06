@@ -2,6 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from '../components/Navbar';
 import ThemeProviderWrapper from "@/components/ThemeProvideWrapper";
+import { cookies } from "next/headers";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -19,8 +20,11 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+    const cookieStore = cookies();
+    const cookieTheme = (cookieStore.get("theme")?.value) || "light";
+
     return (
-        <html lang="en" suppressHydrationWarning>
+        <html lang="en" suppressHydrationWarning data-theme={cookieTheme}>
         <body>
             <ThemeProviderWrapper>
                 <Navbar/>
