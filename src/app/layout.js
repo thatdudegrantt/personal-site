@@ -20,7 +20,7 @@ export const metadata = {
 };
 
 export default async function RootLayout({ children }) {
-    const cookieStore = cookies();
+    const cookieStore = await cookies();
     const cookieTheme = await (cookieStore.get("theme")?.value) || "light";
 
     return (

@@ -34,14 +34,11 @@ export default function Navbar() {
         <div className="navbar bg-base-100 shadow-lg">
             <div className="flex-1">
                 <a href="/" className="btn btn-ghost normal-case text-xl text-base-content">
-                    My Website
+                    Home
                 </a>
             </div>
             <div className="flex-none">
                 <ul className="menu menu-horizontal px-1 text-base-content">
-                    <li>
-                        <a href="/">Home</a>
-                    </li>
                     <li>
                         <a href="/about">About</a>
                     </li>
