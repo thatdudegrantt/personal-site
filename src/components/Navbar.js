@@ -30,15 +30,15 @@ export default function Navbar() {
         return null; // avoids rendering until component is mounted
     }
 
+    // changing to add left and right said of navbar to achieve stylized look I want.
     return (
         <div className="navbar bg-base-100 shadow-lg">
-            <div className="flex-1">
+
+            <div className="flex-1 flex items-center gap-2">
                 <a href="/" className="btn btn-ghost normal-case text-xl text-base-content">
                     Home
                 </a>
-            </div>
-            <div className="flex-none">
-                <ul className="menu menu-horizontal px-1 text-base-content">
+                <ul className="menu menu-horizontal px-1 text-base-content gap-1">
                     <li>
                         <a href="/about">About</a>
                     </li>
@@ -52,6 +52,9 @@ export default function Navbar() {
                         <a href="/contact">Contact</a>
                     </li>
                 </ul>
+            </div>
+            <div className="flex-none">
+
             </div>
             <select className="select select-bordered text-base-content"
                     value={theme}
