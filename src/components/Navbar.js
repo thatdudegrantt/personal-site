@@ -53,7 +53,7 @@ export default function Navbar() {
                     </li>
                 </ul>
             </div>
-            
+
             <select className="select select-bordered text-base-content"
                     value={theme}
                     onChange={(e) => handleThemeChange(e.target.value)}>
