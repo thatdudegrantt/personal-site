@@ -50,7 +50,8 @@ export default function Resume() {
                         </div>
                         <div>
                             <h3 className="font-semibold">Concepts:</h3>
-                            <p>Agile, OOP, Data Structures & Algorithms, API calls, LLMs & Neural Networks, Computer Vision</p>
+                            <p>Agile, OOP, Data Structures & Algorithms, LLMs & Neural Networks, Computer
+                                Vision, Dynamic Programming, UI/UX design, Fullstack development</p>
                         </div>
                     </div>
                 </section>
