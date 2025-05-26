@@ -84,6 +84,34 @@ export default function Resume() {
                             <li>Developed Frogger game with custom collision detection and state machine architecture</li>
                         </ul>
                     </div>
+
+                    {/* Audiospace Journey */}
+                    <div className="mb-6 text-base-content">
+                        <h3 className="text-xl font-semibold">AUDIOSCAPE JOURNEY (CUSTOM SPOTIFY WRAPPED)</h3>
+                        <div className="flex justify-between text-sm mb-2">
+                            <span>Python, CSS/HTML, JavaScript, Django</span>
+                            <span>Oct 2024 - Dec 2024</span>
+                        </div>
+                        <ul className="list-disc pl-5 space-y-1">
+                            <li>Developed a dynamic website leveraging Spotify API to generate & display custom music listening data</li>
+                            <li>Designed engaging animations, game logic, and integrated AI using Google's Gemini LLM</li>
+                            <li>Employed Agile methodologies to meet client needs for a project that our professor & TAs labeled best in the class</li>
+                        </ul>
+                    </div>
+
+                    {/* Atlanta Food Finder */}
+                    <div className="mb-6 text-base-content">
+                        <h3 className="text-xl font-semibold">ATLANTA FOOD FINDER</h3>
+                        <div className="flex justify-between text-sm mb-2">
+                            <span>Python, CSS, HTML, JavaScript, Django</span>
+                            <span>Aug 2024 - Oct 2024</span>
+                        </div>
+                        <ul className="list-disc pl-5 space-y-1">
+                            <li>Built a map-based application utilizing Google Maps API for restaurant searches by name, type, and proximity</li>
+                            <li>Implemented seamless backend logic, accounts, restaurant favoriting & review system</li>
+                            <li>Created user-friendly UI design with intuitive navigation</li>
+                        </ul>
+                    </div>
                 </section>
 
                 {/* Work Experience */}
@@ -97,6 +125,33 @@ export default function Resume() {
                         </div>
                         <ul className="list-disc pl-5 space-y-1">
                             <li>Collaborated in a high-pressure team environment, managing 75+ daily customer interactions</li>
+                        </ul>
+                    </div>
+
+                    {/* City of Atlanta */}
+                    <div className="mb-6">
+                        <h3 className="text-xl font-semibold">CITY OF ATLANTA, OFFICE OF THE MAYOR - EXECUTIVE INTERN</h3>
+                        <div className="flex justify-between text-sm mb-2">
+                            <span>Atlanta, GA</span>
+                            <span>Jan 2022 - Aug 2022</span>
+                        </div>
+                        <ul className="list-disc pl-5 space-y-1">
+                            <li>Worked under the Mayor's Executive Assistant & COA Business Manager</li>
+                            <li>Organized, researched, planned events, and researched city archives</li>
+                            <li>Documented finances and helped onboard and advise new interns</li>
+                        </ul>
+                    </div>
+
+                    {/* Ossoff Campaign */}
+                    <div className="mb-6">
+                        <h3 className="text-xl font-semibold">JON OSSOFF FOR US SENATE - CAMPAIGN VOLUNTEER</h3>
+                        <div className="flex justify-between text-sm mb-2">
+                            <span>Atlanta, GA</span>
+                            <span>Sep 2020 - Dec 2020</span>
+                        </div>
+                        <ul className="list-disc pl-5 space-y-1">
+                            <li>Canvassed door to door and assisted with mailings</li>
+                            <li>Participated in both in-person and virtual fundraisers</li>
                         </ul>
                     </div>
                 </section>
