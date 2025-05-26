@@ -16,14 +16,17 @@ export default function Resume() {
 
                 {/* Education */}
                 <section className="mb-8">
-                    <h2 className="text-2xl font-bold border-b-2 border-base-content pb-1 mb-4">EDUCATION</h2>
+                    <h2 className="text-2xl font-bold border-b-2 pb-1 mb-4 text-[var(--resume-heading)] border-[var(--resume-heading)]">
+                        EDUCATION
+                    </h2>
                     <div className="mb-4">
                         <h3 className="text-xl font-semibold text-base-content">GEORGIA INSTITUTE OF TECHNOLOGY</h3>
                         <div className="flex justify-between text-base-content">
                             <span className="font-medium">Atlanta, GA</span>
-                            <span>May 2026</span>
+                            <span>Dec 2026</span>
                         </div>
-                        <p className="italic text-base-content">Bachelor of Science in Computer Science (Threads: Media/Systems & Architecture), Minor in Economics</p>
+                        <p className="italic text-base-content">Bachelor of Science in Computer Science (Threads:
+                            Media/Systems & Architecture), Minor in Economics</p>
                         <div className="mt-2 text-base-content">
                             <h4 className="font-medium">Awards:</h4>
                             <ul className="list-disc pl-5">
@@ -31,16 +34,18 @@ export default function Resume() {
                                 <li>GSU President's List Fall 2022 & Dean's List Spring 2023</li>
                             </ul>
                             <h4 className="font-medium mt-2">Clubs:</h4>
-                            <p>GT Developers, Video Games @ GT, GT Barbell Club, GT Calisthenics, GT Climbing Club, GT Esports</p>
+                            <p>GT Developers, Video Games @ GT, GT Barbell Club, GT Calisthenics, GT Climbing Club, GT
+                                Esports</p>
                         </div>
                     </div>
                 </section>
 
                 {/* Technical Skills */}
                 <section className="mb-8">
-                    <h2 className="text-2xl font-bold border-b-2 border-base-content pb-1 mb-4">TECHNICAL SKILLS</h2>
+                    <h2 className="text-2xl font-bold border-b-2 pb-1 mb-4 text-[var(--resume-heading)] border-[var(--resume-heading)]">TECHNICAL
+                        SKILLS</h2>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-base-content">
-                        <div>
+                    <div>
                             <h3 className="font-semibold">Languages:</h3>
                             <p>Java, Python, C, C#, JavaScript, HTML/CSS</p>
                         </div>
@@ -58,7 +63,7 @@ export default function Resume() {
 
                 {/* Projects */}
                 <section className="mb-8">
-                    <h2 className="text-2xl font-bold border-b-2 border-base-content pb-1 mb-4">PROJECTS</h2>
+                    <h2 className="text-2xl font-bold border-b-2 pb-1 mb-4 text-[var(--resume-heading)] border-[var(--resume-heading)]">PROJECTS</h2>
 
                     <div className="mb-6 text-base-content">
                         <h3 className="text-xl font-semibold">PLANKTON COMPUTER VISION PROJECT</h3>
@@ -115,45 +120,52 @@ export default function Resume() {
                 </section>
 
                 {/* Work Experience */}
-                <section className="text-base-content">
-                    <h2 className="text-2xl font-bold border-b-2 border-base-content pb-1 mb-4">WORK EXPERIENCE</h2>
-                    <div className="mb-6">
-                        <h3 className="text-xl font-semibold">BARCELONA WINE BAR - WAITSTAFF</h3>
-                        <div className="flex justify-between text-sm mb-2">
-                            <span>Atlanta, GA</span>
-                            <span>Jun 2024 - Dec 2024</span>
+                <section>
+                    <h2 className="text-2xl font-bold border-b-2 pb-1 mb-4 text-[var(--resume-heading)] border-[var(--resume-heading)]">WORK
+                        EXPERIENCE</h2>
+                    <section className="text-base-content">
+                        <div className="mb-6">
+                            <h3 className="text-xl font-semibold">BARCELONA WINE BAR - WAITSTAFF</h3>
+                            <div className="flex justify-between text-sm mb-2">
+                                <span>Atlanta, GA</span>
+                                <span>Jun 2024 - Dec 2024</span>
+                            </div>
+                            <ul className="list-disc pl-5 space-y-1">
+                                <li>Collaborated in a high-pressure team environment, managing 75+ daily customer
+                                    interactions
+                                </li>
+                            </ul>
                         </div>
-                        <ul className="list-disc pl-5 space-y-1">
-                            <li>Collaborated in a high-pressure team environment, managing 75+ daily customer interactions</li>
-                        </ul>
-                    </div>
 
-                    {/* City of Atlanta */}
-                    <div className="mb-6">
-                        <h3 className="text-xl font-semibold">CITY OF ATLANTA, OFFICE OF THE MAYOR - EXECUTIVE INTERN</h3>
-                        <div className="flex justify-between text-sm mb-2">
-                            <span>Atlanta, GA</span>
-                            <span>Jan 2022 - Aug 2022</span>
+                        {/* City of Atlanta */}
+                        <div className="mb-6">
+                            <h3 className="text-xl font-semibold">CITY OF ATLANTA, OFFICE OF THE MAYOR - EXECUTIVE
+                                INTERN</h3>
+                            <div className="flex justify-between text-sm mb-2">
+                                <span>Atlanta, GA</span>
+                                <span>Jan 2022 - Aug 2022</span>
+                            </div>
+                            <ul className="list-disc pl-5 space-y-1">
+                                <li>Worked under the Mayor's Executive Assistant & COA Business Manager</li>
+                                <li>Organized, researched, planned events, and researched city archives</li>
+                                <li>Documented finances and helped onboard and advise new interns</li>
+                            </ul>
                         </div>
-                        <ul className="list-disc pl-5 space-y-1">
-                            <li>Worked under the Mayor's Executive Assistant & COA Business Manager</li>
-                            <li>Organized, researched, planned events, and researched city archives</li>
-                            <li>Documented finances and helped onboard and advise new interns</li>
-                        </ul>
-                    </div>
 
-                    {/* Ossoff Campaign */}
-                    <div className="mb-6">
-                        <h3 className="text-xl font-semibold">JON OSSOFF FOR US SENATE - CAMPAIGN VOLUNTEER</h3>
-                        <div className="flex justify-between text-sm mb-2">
-                            <span>Atlanta, GA</span>
-                            <span>Sep 2020 - Dec 2020</span>
+                        {/* Ossoff Campaign */}
+                        <div className="mb-6">
+                            <h3 className="text-xl font-semibold">JON OSSOFF FOR US SENATE - CAMPAIGN VOLUNTEER</h3>
+                            <div className="flex justify-between text-sm mb-2">
+                                <span>Atlanta, GA</span>
+                                <span>Sep 2020 - Dec 2020</span>
+                            </div>
+                            <ul className="list-disc pl-5 space-y-1">
+                                <li>Canvassed door to door and assisted with mailings</li>
+                                <li>Participated in both in-person and virtual fundraisers</li>
+                            </ul>
                         </div>
-                        <ul className="list-disc pl-5 space-y-1">
-                            <li>Canvassed door to door and assisted with mailings</li>
-                            <li>Participated in both in-person and virtual fundraisers</li>
-                        </ul>
-                    </div>
+                    </section>
+
                 </section>
 
                 {/* PDF Download */}

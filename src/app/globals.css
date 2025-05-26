@@ -19,3 +19,17 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+:root,
+[data-theme="light"],
+[data-theme="cupcake"] {
+  --resume-heading: #291334;  /* change if needed */
+  --resume-text: #4b5563;
+}
+
+[data-theme="dark"],
+[data-theme="synthwave"],
+[data-theme="coffee"] {
+  --resume-heading: var(--bc);
+  --resume-text: var(--bc);
+}
