@@ -45,7 +45,7 @@ export default function Resume() {
                     <h2 className="text-2xl font-bold border-b-2 pb-1 mb-4 text-[var(--resume-heading)] border-[var(--resume-heading)]">TECHNICAL
                         SKILLS</h2>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-base-content">
-                    <div>
+                        <div>
                             <h3 className="font-semibold">Languages:</h3>
                             <p>Java, Python, C, C#, JavaScript, HTML/CSS</p>
                         </div>
@@ -63,59 +63,130 @@ export default function Resume() {
 
                 {/* Projects */}
                 <section className="mb-8">
-                    <h2 className="text-2xl font-bold border-b-2 pb-1 mb-4 text-[var(--resume-heading)] border-[var(--resume-heading)]">PROJECTS</h2>
+                    <h2 className="text-2xl font-bold border-b-2 pb-1 mb-6 text-[var(--resume-heading)] border-[var(--resume-heading)]">
+                        PROJECTS
+                    </h2>
 
-                    <div className="mb-6 text-base-content">
-                        <h3 className="text-xl font-semibold">PLANKTON COMPUTER VISION PROJECT</h3>
-                        <div className="flex justify-between text-sm mb-2">
-                            <span>Python, Jupyter Notebooks</span>
-                            <span>Jan 2025 - Present</span>
+                    <div className="grid grid-cols-1 gap-6">
+                        {/* Plankton Computer Vision */}
+                        <div
+                            className="bg-base-100 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-base-300">
+                            <div className="p-6">
+                                <div className="flex justify-between items-start mb-2">
+                                    <h3 className="text-xl font-bold text-base-content">PLANKTON COMPUTER VISION
+                                        PROJECT</h3>
+                                    <span className="text-sm bg-primary text-primary-content px-2 py-1 rounded">
+                                        Python, Jupyter Notebooks
+                                    </span>
+                                </div>
+                                <p className="text-sm text-base-content mb-4">Jan 2025 - Present</p>
+                                <ul className="space-y-2 text-base-content">
+                                    <li className="flex items-start">
+                                        <span className="mr-2">•</span>
+                                        Lead role designing a computer vision neural network to identify species of
+                                        plankton
+                                    </li>
+                                    <li className="flex items-start">
+                                        <span className="mr-2">•</span>
+                                        Improved CNN accuracy by 65% by redesigning from InceptionV3 to EfficientNet
+                                        model
+                                    </li>
+                                    <li className="flex items-start">
+                                        <span className="mr-2">•</span>
+                                        Implemented image preprocessing pipeline focusing on depth retention and edge
+                                        sharpening
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <ul className="list-disc pl-5 space-y-1">
-                            <li>Lead role designing a computer vision neural network to identify species of plankton</li>
-                            <li>Improved CNN accuracy by 65% by redesigning from InceptionV3 to EfficientNet model</li>
-                            <li>Implemented image preprocessing pipeline focusing on depth retention and edge sharpening</li>
-                        </ul>
-                    </div>
 
-                    <div className="mb-6 text-base-content">
-                        <h3 className="text-xl font-semibold">GAME BOY ADVANCE EMULATOR & FROGGER CLONE</h3>
-                        <div className="flex justify-between text-sm mb-2">
-                            <span>C</span>
-                            <span>Mar 2025 - Apr 2025</span>
+                        {/* GBA Emulator */}
+                        <div
+                            className="bg-base-100 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-base-300">
+                            <div className="p-6">
+                                <div className="flex justify-between items-start mb-2">
+                                    <h3 className="text-xl font-bold text-base-content">GAME BOY ADVANCE EMULATOR &
+                                        FROGGER CLONE</h3>
+                                    <span className="text-sm bg-primary text-primary-content px-2 py-1 rounded">
+                                        C
+                                    </span>
+                                </div>
+                                <p className="text-sm text-base-content mb-4">Mar 2025 - Apr 2025</p>
+                                <ul className="space-y-2 text-base-content">
+                                    <li className="flex items-start">
+                                        <span className="mr-2">•</span>
+                                        Implemented GBA hardware-level features including DMA and memory-mapped I/O
+                                    </li>
+                                    <li className="flex items-start">
+                                        <span className="mr-2">•</span>
+                                        Developed Frogger game with custom collision detection and state machine
+                                        architecture
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <ul className="list-disc pl-5 space-y-1">
-                            <li>Implemented GBA hardware-level features including DMA and memory-mapped I/O</li>
-                            <li>Developed Frogger game with custom collision detection and state machine architecture</li>
-                        </ul>
-                    </div>
 
-                    {/* Audiospace Journey */}
-                    <div className="mb-6 text-base-content">
-                        <h3 className="text-xl font-semibold">AUDIOSCAPE JOURNEY (CUSTOM SPOTIFY WRAPPED)</h3>
-                        <div className="flex justify-between text-sm mb-2">
-                            <span>Python, CSS/HTML, JavaScript, Django</span>
-                            <span>Oct 2024 - Dec 2024</span>
+                        {/* Audioscape Journey */}
+                        <div
+                            className="bg-base-100 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-base-300">
+                            <div className="p-6">
+                                <div className="flex justify-between items-start mb-2">
+                                    <h3 className="text-xl font-bold text-base-content">AUDIOSCAPE JOURNEY (CUSTOM
+                                        SPOTIFY WRAPPED)</h3>
+                                    <span className="text-sm bg-primary text-primary-content px-2 py-1 rounded">
+                                        Python, CSS/HTML, JavaScript, Django
+                                    </span>
+                                </div>
+                                <p className="text-sm text-base-content mb-4">Oct 2024 - Dec 2024</p>
+                                <ul className="space-y-2 text-base-content">
+                                    <li className="flex items-start">
+                                        <span className="mr-2">•</span>
+                                        Developed a dynamic website leveraging Spotify API to generate & display custom
+                                        music listening data
+                                    </li>
+                                    <li className="flex items-start">
+                                        <span className="mr-2">•</span>
+                                        Designed engaging animations, game logic, and integrated AI using Google's
+                                        Gemini LLM
+                                    </li>
+                                    <li className="flex items-start">
+                                        <span className="mr-2">•</span>
+                                        Employed Agile methodologies to meet client needs for a project that our
+                                        professor & TAs labeled best in the class
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <ul className="list-disc pl-5 space-y-1">
-                            <li>Developed a dynamic website leveraging Spotify API to generate & display custom music listening data</li>
-                            <li>Designed engaging animations, game logic, and integrated AI using Google's Gemini LLM</li>
-                            <li>Employed Agile methodologies to meet client needs for a project that our professor & TAs labeled best in the class</li>
-                        </ul>
-                    </div>
 
-                    {/* Atlanta Food Finder */}
-                    <div className="mb-6 text-base-content">
-                        <h3 className="text-xl font-semibold">ATLANTA FOOD FINDER</h3>
-                        <div className="flex justify-between text-sm mb-2">
-                            <span>Python, CSS, HTML, JavaScript, Django</span>
-                            <span>Aug 2024 - Oct 2024</span>
+                        {/* Atlanta Food Finder */}
+                        <div
+                            className="bg-base-100 rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-base-300">
+                            <div className="p-6">
+                                <div className="flex justify-between items-start mb-2">
+                                    <h3 className="text-xl font-bold text-base-content">ATLANTA FOOD FINDER</h3>
+                                    <span className="text-sm bg-primary text-primary-content px-2 py-1 rounded">
+                                        Python, CSS, HTML, JavaScript, Django
+                                    </span>
+                                </div>
+                                <p className="text-sm text-base-content mb-4">Aug 2024 - Oct 2024</p>
+                                <ul className="space-y-2 text-base-content">
+                                    <li className="flex items-start">
+                                        <span className="mr-2">•</span>
+                                        Built a map-based application utilizing Google Maps API for restaurant searches
+                                        by name, type, and proximity
+                                    </li>
+                                    <li className="flex items-start">
+                                        <span className="mr-2">•</span>
+                                        Implemented seamless backend logic, accounts, restaurant favoriting & review
+                                        system
+                                    </li>
+                                    <li className="flex items-start">
+                                        <span className="mr-2">•</span>
+                                        Created user-friendly UI design with intuitive navigation
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <ul className="list-disc pl-5 space-y-1">
-                            <li>Built a map-based application utilizing Google Maps API for restaurant searches by name, type, and proximity</li>
-                            <li>Implemented seamless backend logic, accounts, restaurant favoriting & review system</li>
-                            <li>Created user-friendly UI design with intuitive navigation</li>
-                        </ul>
                     </div>
                 </section>
 
