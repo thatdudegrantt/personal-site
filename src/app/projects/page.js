@@ -12,12 +12,12 @@ export default function Projects() {
             ]
         },
         {
-            title: "2D GameBox Advanced System & Frogger Clone",
+            title: "2D GameBoy Advanced System & Custom Frogger Game",
             tech: "C",
             date: "Mar 2025",
             description: [
                 "Implemented GBA hardware-level features including DMA and memory-mapped I/O",
-                "Developed Frogger clone with custom collision detection",
+                "Developed my own Frogger clone with custom collision detection, assets, and state-machine game logic",
                 "Optimized for GBA hardware constraints"
             ]
         },
