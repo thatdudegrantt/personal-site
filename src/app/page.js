@@ -7,8 +7,8 @@ export default function Home() {
                 <div className="card bg-base-200 rounded-lg shadow-md p-8 border border-base-300">
                     <div className="space-y-6 text-base-content">
                         <p className="text-lg">
-                            Hello! I'm a rising senior at Georgia Tech majoring in Computer Science with threads
-                            in Systems Architecture and Media. I'm passionate about software engineering and
+                            Hello! My name is Grant Polazzo & I'm a rising senior at Georgia Tech majoring in Computer Science with threads
+                            in Systems Architecture and Media. I am extremely passionate about solving problems, collaboration, software engineering and
                             constantly expanding my knowledge in the field.
                         </p>
 
@@ -35,7 +35,7 @@ export default function Home() {
                         <p className="text-lg">
                             I'm excited about opportunities where I can contribute my technical skills while
                             continuing to grow as an engineer. I thrive in collaborative environments where
-                            teams work together to create something meaningful.
+                            teams work together to create something meaningful and I'm so excited to continue my path. Thank you for visiting my website!
                         </p>
                     </div>
 

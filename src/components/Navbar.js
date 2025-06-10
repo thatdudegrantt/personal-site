@@ -40,9 +40,6 @@ export default function Navbar() {
                 </a>
                 <ul className="menu menu-horizontal px-1 text-base-content gap-1">
                     <li>
-                        <a href="/about">About</a>
-                    </li>
-                    <li>
                         <a href="/projects">Projects</a>
                     </li>
                     <li>
