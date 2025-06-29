@@ -56,9 +56,6 @@ export default function Navbar() {
                     onChange={(e) => handleThemeChange(e.target.value)}>
                 <option value="light">Light</option>
                 <option value="dark">Dark</option>
-                <option value="cupcake">Cupcake</option>
-                <option value="synthwave">Synthwave</option>
-                <option value="coffee">Coffee</option>
             </select>
         </div>
     );
