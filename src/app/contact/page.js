@@ -2,128 +2,126 @@
 import { FaLinkedin, FaGithub, FaEnvelope, FaCode } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
 export default function Contact() {
+    const [email, setEmail] = useState('');
+    const [copied, setCopied] = useState(false);
+
+    useEffect(() => {
+        // Obfuscated email assembly
+        const parts = ['polazzo.grant', 'gmail.com'];
+        setEmail(parts.join('@'));
+    }, []);
+
     const handleEmailClick = () => {
-        const email = 'polazzo.grant' + '@' + 'gmail.com';
         navigator.clipboard.writeText(email);
-        alert('Email copied to clipboard!');
+        setCopied(true);
+        setTimeout(() => setCopied(false), 2000);
     };
 
     return (
-        <div className="min-h-screen bg-base-200 p-6 md:p-10">
-            <div className="max-w-3xl mx-auto space-y-8">
-                {/* Header */}
+        <div className="min-h-screen bg-base-200 p-4 md:p-8">
+            <div className="max-w-3xl mx-auto space-y-6">
+                {/* Compact Header */}
                 <div className="text-center">
-                    <h1 className="text-4xl font-bold text-base-content mb-3">Let's Connect</h1>
-                    <p className="text-lg text-base-content/80 max-w-lg mx-auto">
-                        Reach out for collaborations, opportunities, or just to chat about tech!
+                    <h1 className="text-3xl font-bold text-base-content mb-2">Let's Connect</h1>
+                    <p className="text-base-content/80">
+                        Reach out for opportunities or collaborations
                     </p>
                 </div>
 
-                {/* Contact Cards Grid - Now 3 columns */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {/* Compact Contact Cards - Equal Height */}
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                     {/* LinkedIn Card */}
-                    <div className="bg-base-100 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 border border-base-300">
-                        <div className="flex flex-col items-center text-center h-full">
-                            <div className="bg-blue-100/20 p-4 rounded-full mb-4">
-                                <FaLinkedin className="text-blue-500 text-3xl" />
+                    <div className="bg-base-100 rounded-lg shadow-md hover:shadow-lg transition-shadow p-4 border border-base-300 flex flex-col h-full">
+                        <div className="flex flex-col items-center text-center flex-grow">
+                            <div className="bg-blue-100/20 p-3 rounded-full mb-3">
+                                <FaLinkedin className="text-blue-500 text-2xl" />
                             </div>
-                            <h2 className="text-xl font-semibold text-base-content mb-3">Professional Network</h2>
-                            <p className="text-base-content/80 mb-6 flex-grow">
-                                Connect for career opportunities or professional advice
-                            </p>
+                            <h2 className="text-lg font-semibold mb-2 text-base-content">LinkedIn</h2>
                             <a
                                 href="https://www.linkedin.com/in/grant-polazzo"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="btn btn-primary w-full mt-auto"
+                                className="btn btn-primary btn-sm w-full mt-auto"
                             >
-                                Visit LinkedIn
+                                Connect
                             </a>
                         </div>
                     </div>
 
                     {/* GitHub Card */}
-                    <div className="bg-base-100 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 border border-base-300">
-                        <div className="flex flex-col items-center text-center h-full">
-                            <div className="bg-purple-100/20 p-4 rounded-full mb-4">
-                                <FaGithub className="text-purple-500 text-3xl" />
+                    <div className="bg-base-100 rounded-lg shadow-md hover:shadow-lg transition-shadow p-4 border border-base-300 flex flex-col h-full">
+                        <div className="flex flex-col items-center text-center flex-grow">
+                            <div className="bg-purple-100/20 p-3 rounded-full mb-3">
+                                <FaGithub className="text-purple-500 text-2xl" />
                             </div>
-                            <h2 className="text-xl font-semibold text-base-content mb-3">Code Collaboration</h2>
-                            <p className="text-base-content/80 mb-6 flex-grow">
-                                Explore my projects or collaborate on open-source work
-                            </p>
+                            <h2 className="text-lg font-semibold mb-2 text-base-content">GitHub</h2>
                             <a
                                 href="https://github.com/thatdudegrantt"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="btn btn-secondary w-full mt-auto"
+                                className="btn btn-secondary btn-sm w-full mt-auto"
                             >
-                                View GitHub
+                                View Code
                             </a>
                         </div>
                     </div>
 
                     {/* LeetCode Card */}
-                    <div className="bg-base-100 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 p-6 border border-base-300">
-                        <div className="flex flex-col items-center text-center h-full">
-                            <div className="bg-orange-100/20 p-4 rounded-full mb-4">
-                                <SiLeetcode className="text-orange-500 text-3xl" />
+                    <div className="bg-base-100 rounded-lg shadow-md hover:shadow-lg transition-shadow p-4 border border-base-300 flex flex-col h-full">
+                        <div className="flex flex-col items-center text-center flex-grow">
+                            <div className="bg-orange-100/20 p-3 rounded-full mb-3">
+                                <SiLeetcode className="text-orange-500 text-2xl" />
                             </div>
-                            <h2 className="text-xl font-semibold text-base-content mb-3">Coding Challenges</h2>
-                            <p className="text-base-content/80 mb-6 flex-grow">
-                                View my problem-solving skills and algorithm practice
-                            </p>
+                            <h2 className="text-lg font-semibold mb-2 text-base-content">LeetCode</h2>
                             <a
                                 href="https://leetcode.com/thatdudegrant/"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="btn bg-orange-500 hover:bg-orange-600 text-white w-full mt-auto"
+                                className="btn bg-orange-500 hover:bg-orange-600 text-white btn-sm w-full mt-auto"
                             >
-                                View LeetCode
+                                View Profile
                             </a>
                         </div>
                     </div>
                 </div>
 
-                {/* Email Section */}
-                <div className="bg-base-100 rounded-xl shadow-lg p-6 border border-base-300">
+                {/* Compact Email Section */}
+                <div className="bg-base-100 rounded-lg shadow-md p-4 border border-base-300">
                     <div className="flex flex-col items-center text-center">
-                        <div className="bg-green-100/20 p-4 rounded-full mb-4">
-                            <FaEnvelope className="text-green-500 text-3xl" />
+                        <div className="bg-green-100/20 p-3 rounded-full mb-3">
+                            <FaEnvelope className="text-green-500 text-2xl" />
                         </div>
-                        <h2 className="text-xl font-semibold text-base-content mb-2">Email Me</h2>
-                        <p className="text-base-content/80 mb-6">
-                            For direct inquiries, you can reach me at:
-                        </p>
+                        <h2 className="text-lg font-semibold mb-2 text-base-content">Email</h2>
 
                         <motion.div
                             whileHover={{ scale: 1.03 }}
                             whileTap={{ scale: 0.98 }}
-                            className="tooltip tooltip-bottom"
-                            data-tip="Click to copy"
+                            className="tooltip"
+                            data-tip={copied ? "Copied!" : "Click to copy"}
                         >
                             <button
                                 onClick={handleEmailClick}
-                                className="btn btn-neutral flex items-center gap-2 px-6"
+                                className="btn btn-neutral btn-sm flex items-center gap-2"
                             >
                                 <FaEnvelope />
-                                <span className="font-mono text-sm">
-                  polazzo.grant<span className="hidden sm:inline">@gmail.com</span>
-                </span>
+                                <span className="font-mono text-xs sm:text-sm">
+                                    {email || 'Loading...'}
+                                </span>
                             </button>
                         </motion.div>
 
-                        <p className="text-sm text-base-content/60 mt-4">
-                            (Click to copy - prevents email scraping)
+                        <p className="text-xs text-base-content/60 mt-2">
+                            {copied ? "Email copied!" : "Click to copy address"}
                         </p>
                     </div>
                 </div>
 
-                {/* Response Time Note */}
-                <div className="text-center text-base-content/70 text-sm">
-                    <p>I typically respond to professional inquiries within 24-48 hours.</p>
+                {/* Minimal Footer */}
+                <div className="text-center text-sm text-base-content/60">
+                    <p>I typically respond within 24 hours.</p>
                 </div>
             </div>
         </div>
