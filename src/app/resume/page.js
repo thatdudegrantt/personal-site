@@ -34,8 +34,7 @@ export default function Resume() {
                                 <li>GSU President's List Fall 2022 & Dean's List Spring 2023</li>
                             </ul>
                             <h4 className="font-medium mt-2">Clubs:</h4>
-                            <p>GT Developers, Video Games @ GT, GT Barbell Club, GT Calisthenics, GT Climbing Club, GT
-                                Esports</p>
+                            <p>GT Developers, Video Games @ GT, GT esports, & multiple GT recreational sports clubs.</p>
                         </div>
                     </div>
                 </section>
