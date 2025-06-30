@@ -26,9 +26,10 @@ export default function Projects() {
             tech: "Next.js, Tailwind CSS",
             date: "2025",
             description: [
-                "Portfolio website showcasing my projects and skills",
-                "Features a responsive design with theme customization & interactive elements with smooth animations",
-                "Hosted with Vercel and updated regularly"
+                "built with my own 2 hands - no ai, no premade websites but using next js is basically a premade site.",
+                "Portfolio website presenting my projects and both my behavioral & technical skills",
+                "Features a responsive design & interactive elements with smooth animations",
+                "Hosted & secured with Vercel and updated regularly"
             ]
         },
         {
