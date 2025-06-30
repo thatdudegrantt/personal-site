@@ -24,10 +24,9 @@ export default function Resume() {
 
     // added expand sections
     const [expandedSections, setExpandedSections] = useState({
-        awards: false,
-        clubs: false
+        awards: true,
+        clubs: true
     });
-
     const toggleSection = (section) => {
         setExpandedSections(prev => ({
             ...prev,
@@ -51,12 +50,8 @@ export default function Resume() {
     return (
         <div className="p-4 md:p-8 bg-base-200 min-h-screen">
             <div className="max-w-4xl mx-auto space-y-6">
-                {/* Header */}
-                <motion.div
-                    whileHover={cardVar.hover}
-                    whileTap={cardVar.tap}
-                    className="bg-base-100 rounded-lg shadow-lg p-6 border-l-4 border-primary"
-                >
+                {/* Header - Now with consistent button styling */}
+                <div className="bg-base-100 rounded-lg shadow-lg p-6">
                     <h1 className="text-3xl md:text-4xl font-bold text-base-content text-center mb-4">Grant Polazzo</h1>
                     <div className="flex flex-wrap justify-center gap-3 items-center">
                         {/* Email */}
@@ -68,7 +63,7 @@ export default function Resume() {
                         >
                             <button
                                 onClick={() => handleCopy('email', email)}
-                                className="btn btn-neutral btn-sm flex items-center gap-2"
+                                className="btn btn-outline btn-sm flex items-center gap-2"
                             >
                                 <FaEnvelope/>
                                 <span className="font-mono text-xs sm:text-sm">
@@ -86,7 +81,7 @@ export default function Resume() {
                         >
                             <button
                                 onClick={() => handleCopy('github', 'github.com/thatdudegrantt')}
-                                className="btn btn-neutral btn-sm flex items-center gap-2"
+                                className="btn btn-outline btn-sm flex items-center gap-2"
                             >
                                 <FaGithub/>
                                 <span>GitHub</span>
@@ -102,14 +97,14 @@ export default function Resume() {
                         >
                             <button
                                 onClick={() => handleCopy('linkedin', 'linkedin.com/in/grant-polazzo')}
-                                className="btn btn-neutral btn-sm flex items-center gap-2"
+                                className="btn btn-outline btn-sm flex items-center gap-2"
                             >
                                 <FaLinkedin/>
                                 <span>LinkedIn</span>
                             </button>
                         </motion.div>
                     </div>
-                </motion.div>
+                </div>
 
                 {/* Education */}
                 <motion.div
@@ -327,7 +322,7 @@ export default function Resume() {
                 <motion.div
                     whileHover={cardVar.hover}
                     whileTap={cardVar.tap}
-                    className="bg-base-100 rounded-lg shadow-lg p-6 border-l-4 border-primary border-base-300"
+                    className="bg-base-100 rounded-lg shadow-lg p-6 border-l-4 border-primary"
                 >
                     <h2 className="text-2xl font-bold text-base-content mb-4">WORK EXPERIENCE</h2>
                     <div className="space-y-6">
