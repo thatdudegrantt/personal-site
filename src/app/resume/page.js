@@ -184,7 +184,7 @@ export default function Resume() {
                             <h3 className="font-semibold">Languages:</h3>
                             <p>Java, Python, C, C#, JavaScript, HTML/CSS</p>
                             <h3 className="font-semibold mt-3">Game Development:</h3>
-                            <p>C++, Unity, Game Design Patterns</p>
+                            <p>Unreal 5, Unity, Game Asset Design</p>
                         </div>
                         <div>
                             <h3 className="font-semibold">Frameworks:</h3>
