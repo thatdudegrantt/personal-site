@@ -1,22 +1,44 @@
+"use client";
+import Image from 'next/image';
+
 export default function Home() {
     return (
-        <div className="min-h-screen bg-base-100 p-8">
-            <div className="max-w-4xl mx-auto">
-                <h1 className="text-4xl font-bold text-primary mb-6">About Me</h1>
+        <div className="min-h-screen bg-base-100">
+            <div className="max-w-4xl mx-auto px-4 py-12">
+                {/* Hero Section with Image */}
+                <div className="flex flex-col md:flex-row gap-8 items-center mb-12">
+                    <div className="md:w-1/3">
+                        <div className="relative h-64 md:h-80 w-full rounded-lg overflow-hidden shadow-md">
+                            <Image
+                                src="/images/careerFair.png"
+                                alt="Grant Polazzo"
+                                fill
+                                className="object-cover"
+                                priority
+                            />
+                        </div>
+                    </div>
 
-                <div className="card bg-base-200 rounded-lg shadow-md p-8 border border-base-300">
+                    <div className="md:w-2/3">
+                        <h1 className="text-4xl font-bold text-primary mb-4">About Me</h1>
+                        <p className="text-lg mb-4">
+                            My name is Grant Polazzo & I'm a rising senior at Georgia Tech majoring in
+                            Computer Science with threads in Systems Architecture and Media.
+                        </p>
+                    </div>
+                </div>
+
+                <div className="card bg-base-200 rounded-lg shadow-md p-8 mb-12 border border-base-300">
                     <div className="space-y-6 text-base-content">
                         <p className="text-lg">
-                            Hello! My name is Grant Polazzo & I'm a rising senior at Georgia Tech majoring in Computer Science with threads
-                            in Systems Architecture and Media. I am extremely passionate about solving problems, collaboration, software engineering and
+                            I am extremely passionate about solving problems, collaboration, software engineering and
                             constantly expanding my knowledge in the field.
                         </p>
 
+
                         <p className="text-lg">
                             My coursework has included advanced topics like Data Structures, Algorithms,
-                            Object-Oriented Programming, and Agile Project Methodologies. I particularly enjoy
-                            the creative problem-solving aspects of software development and collaborating with
-                            teams to build innovative solutions.
+                            Object-Oriented Programming, and Agile Project Methodologies.
                         </p>
 
                         <p className="text-lg">
@@ -35,17 +57,62 @@ export default function Home() {
                         <p className="text-lg">
                             I'm excited about opportunities where I can contribute my technical skills while
                             continuing to grow as an engineer. I thrive in collaborative environments where
-                            teams work together to create something meaningful and I'm so excited to continue my path. Thank you for visiting my website!
+                            teams work together to create something meaningful and I'm so excited to continue my path.
+                            Thank you for visiting my website!
                         </p>
-                    </div>
 
-                    <div className="mt-12 text-center">
-                        <p className="text-lg text-base-content">
-                            To explore my work further, please check out my <a href="/projects" className="link link-primary">projects</a>,
-                            {' '}<a href="/resume" className="link link-primary">resume</a>, or {' '}
-                            <a href="/contact" className="link link-primary">contact information</a>.
-                        </p>
                     </div>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+                    <div className="relative h-64 rounded-lg overflow-hidden shadow-md">
+                        <Image
+                            src="/images/gatechSports.png"
+                            alt="At a Yellow Jacket Game with Buzz!"
+                            fill
+                            className="object-cover"
+                        />
+                    </div>
+                    <div className="relative h-64 rounded-lg overflow-hidden shadow-md">
+                        <Image
+                            src="/images/walkingPets.png"
+                            alt="sample text placehold"
+                            fill
+                            className="object-cover"
+                        />
+                    </div>
+                    <div className="relative h-64 rounded-lg overflow-hidden shadow-md">
+                        <Image
+                            src="/images/homemadePho.png"
+                            alt="My hobbies"
+                            fill
+                            className="object-cover"
+                        />
+                    </div>
+                    <div className="relative h-64 rounded-lg overflow-hidden shadow-md">
+                        <Image
+                            src="/images/onCampus.png"
+                            alt="from one cs class to another"
+                            fill
+                            className="object-cover"
+                        />
+                    </div>
+                    <div className="relative h-64 rounded-lg overflow-hidden shadow-md">
+                        <Image
+                            src="/images/vacation.png"
+                            alt="I love traveling"
+                            fill
+                            className="object-cover"
+                        />
+                    </div>
+                </div>
+
+                <div className="text-center">
+                    <p className="text-lg">
+                        Explore my <a href="/projects" className="link link-primary">projects</a>,
+                        {' '}<a href="/resume" className="link link-primary">resume</a>, or {' '}
+                        <a href="/contact" className="link link-primary">contact me</a>.
+                    </p>
                 </div>
             </div>
         </div>
