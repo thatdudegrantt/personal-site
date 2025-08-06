@@ -19,18 +19,15 @@ export const metadata = {
   description: "Personal Website",
 };
 
-export default async function RootLayout({ children }) {
-    const cookieStore = await cookies();
-    const cookieTheme = await (cookieStore.get("theme")?.value) || "light";
-
+export default function RootLayout({ children }) {
     return (
-        <html lang="en" suppressHydrationWarning data-theme={cookieTheme}>
-        <body>
-            <ThemeProviderWrapper>
-                <Navbar/>
-                {children}
-            </ThemeProviderWrapper>
+        <html lang="en" suppressHydrationWarning>
+        <body className={`${geistSans.variable} font-sans`}>
+        <ThemeProviderWrapper>
+            <Navbar/>
+            {children}
+        </ThemeProviderWrapper>
         </body>
-    </html>
-  );
+        </html>
+    );
 }

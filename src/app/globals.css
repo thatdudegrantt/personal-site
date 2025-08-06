@@ -6,12 +6,9 @@
   --background: #ffffff;
   --foreground: #171717;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
 }
 
 body {
@@ -21,15 +18,12 @@ body {
 }
 
 :root,
-[data-theme="light"],
-[data-theme="cupcake"] {
-  --resume-heading: #291334;  /* change if needed */
+[data-theme="light"] {
+  --resume-heading: #291334;
   --resume-text: #4b5563;
 }
 
-[data-theme="dark"],
-[data-theme="synthwave"],
-[data-theme="coffee"] {
+[data-theme="dark"]{
   --resume-heading: var(--bc);
   --resume-text: var(--bc);
 }

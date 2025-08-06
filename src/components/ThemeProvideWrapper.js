@@ -1,20 +1,14 @@
 "use client";
-
-import { ThemeProvider, useTheme} from "next-themes";
-import {useEffect, useState} from "react";
+import { ThemeProvider } from "next-themes";
 
 export default function ThemeProviderWrapper({ children }) {
-    const [mounted, setMounted] = useState(false);
-    useEffect(() => {
-        setMounted(true);
-    }, []);
-
-    if (!mounted) {
-        return <div className="bg-base-100 min-h-screen"></div>; // Prevents flashing
-    }
-
     return (
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem={true}>
+        <ThemeProvider
+            attribute="data-theme"
+            defaultTheme="system"
+            enableSystem={true}
+            disableTransitionOnChange
+        >
             {children}
         </ThemeProvider>
     );

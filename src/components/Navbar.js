@@ -7,30 +7,10 @@ export default function Navbar() {
     const {theme, setTheme} = useTheme();
     const [mounted, setMounted] = useState(false);
 
-    useEffect(() => {
-        setMounted(true);
+    useEffect(() => setMounted(true), []);
 
-        // Sync with cookie on first load
-        const savedTheme = document.cookie
-            .split("; ")
-            .find(row => row.startsWith("theme="))
-            ?.split("=")[1];
+    if(!mounted) return null;
 
-        if (savedTheme && theme !== savedTheme) {
-            setTheme(savedTheme);
-        }
-    }, []);
-    const handleThemeChange = (newTheme) => {
-        setTheme(newTheme);
-        document.cookie = `theme=${newTheme}; path=/`;
-        document.documentElement.setAttribute("data-theme", newTheme);
-    };
-
-    if(!mounted) {
-        return null; // avoids rendering until component is mounted
-    }
-
-    // changing to add left and right said of navbar to achieve stylized look I want.
     return (
         <div className="navbar bg-base-100 shadow-lg">
 
@@ -53,7 +33,8 @@ export default function Navbar() {
 
             <select className="select select-bordered text-base-content"
                     value={theme}
-                    onChange={(e) => handleThemeChange(e.target.value)}>
+                    onChange={(e) => setTheme(e.target.value)}>
+                <option value="system">System</option>
                 <option value="light">Light</option>
                 <option value="dark">Dark</option>
             </select>
