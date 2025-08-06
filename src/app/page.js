@@ -1,84 +1,154 @@
 "use client";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { useRef} from "react";
 import Image from 'next/image';
 
 const content = [
     // remember to add a professional headshot grant
     {
         text: "filler",
-        image: "/images/careerFair.png"
+        image: "/images/careerFair.png",
+        portrait: true
     },
     {
         text: "filler",
-        image: "/images/gatechSports.png"
+        image: "/images/gatechSports.png",
+        portrait: true
     },
     {
         text: "filler",
-        image: "/images/walkingPets.png"
+        image: "/images/walkingPets.png",
+        portrait: true
     },
     {
         text: "filler",
-        image: "/images/homemadePho.png"
+        image: "/images/homemadePho.png",
+        portrait: true
     },
     {
         text: "filler",
-        image: "/images/onCampus.png"
+        image: "/images/onCampus.png",
+        portrait: true
     },
     {
         text: "filler",
-        image: "/images/vacation.png"
+        image: "/images/vacation.png",
+        portrait: true
     }
 ]
 
 export default function Home() {
-    const ref = useRef();
-    const {scrollYProgress } = useScroll({ target: ref});
-    const opacity = useTransform(scrollYProgress, [0,0.2],[1,0]);
-    const y = useTransform(scrollYProgress, [0,1], [0,-100]);
-
     return (
         <div className="min-h-screen bg-base-100">
-            <div ref={ref} className="flex h-[400vh]"> {/* Extra height for scroll */}
-                <div className="sticky top-0 h-screen w-1/2 flex items-center px-12">
-                    <motion.div style={{ y }} className="space-y-12">
-                        {content.map((item, i) => (
-                            <motion.div
-                                key={i}
-                                initial={{ opacity: 0 }}
-                                whileInView={{ opacity: 1 }}
-                                viewport={{ once: true, margin: "-100px" }}
-                                className="mb-24"
-                            >
-                                <p className="text-2xl">{item.text}</p>
-                            </motion.div>
-                        ))}
-                    </motion.div>
-                </div>
-
-                <div className="w-1/2">
+            <div className="max-w-7xl mx-auto px-6 py-24">
+                <div className="space-y-24 md:space-y-48">
                     {content.map((item, i) => (
                         <motion.div
                             key={i}
-                            className="h-screen sticky top-0 flex items-center justify-center"
-                            initial={{ opacity: 0 }}
-                            whileInView={{ opacity: 1 }}
-                            viewport={{ once: true, amount: 0.8 }}
+                            className={`flex flex-col md:flex-row gap-8 items-center ${i % 2 ? ' ' : 'md:flex-row-reverse'}`}
+                            initial={{opacity: 0, y: 50}}
+                            whileInView={{opacity: 1, y: 0}}
+                            viewport={{once: true, margin: "-100px"}}
                         >
+                            {/* Image Column */}
                             <motion.div
-                                whileHover={{ scale: 1.05 }}
-                                transition={{ type: "spring", stiffness: 400 }}
+                                className={`relative ${item.portrait ? 'md:w-5/12' : 'md:w-7/12'} w-full h-[70vh] max-h-[800px]`}
+                                whileHover={{scale: 1.02}}
+                                transition={{type: "spring", stiffness: 400}}
                             >
                                 <Image
                                     src={item.image}
                                     alt=""
-                                    width={500}
-                                    height={500}
-                                    className="rounded-xl shadow-2xl"
+                                    fill
+                                    className={`rounded-xl shadow-2xl ${item.portrait ? 'object-cover' : 'object-contain'}`}
+                                    style={{objectPosition: item.portrait ? 'center top' : 'center'}}
+                                    sizes="(max-width: 768px) 100vw, 50vw"
+                                    priority={i === 0}
                                 />
                             </motion.div>
+
+                            {/* Text Column */}
+                            <div className={`${item.portrait ? 'md:w-7/12' : 'md:w-5/12'} w-full p-4 md:p-8`}>
+                                <motion.p
+                                    className="text-xl md:text-2xl leading-relaxed"
+                                    initial={{opacity: 0}}
+                                    whileInView={{opacity: 1}}
+                                    transition={{delay: 0.3}}
+                                >
+                                    {item.text}
+                                </motion.p>
+                            </div>
                         </motion.div>
                     ))}
+                </div>
+
+                <motion.div
+                    initial={{opacity: 0, scaleX: 0}}
+                    whileInView={{
+                        opacity: 1, scaleX: 1, transition: {duration: 0.5}
+                    }}
+                    viewport={{margin: "-25%"}}
+                    className="w-24 h-0.5 bg-primary mx-auto my-20"
+                />
+
+                <div >
+                    <motion.div
+                        className="w-full text-center mb-4"
+                        initial={{opacity: 0}}
+                        whileInView={{opacity: 1}}
+                        transition={{delay: 0.3}}
+                    >
+                        <h3 className="text-2xl md:text-3xl font-light text-base-content mb-4">
+                            Thank you for visiting my portfolio. Let's connect and discuss how we might work together.
+                        </h3>
+                    </motion.div>
+
+                    {/* CTA Section */}
+                    <motion.div
+                        className="flex flex-wrap justify-center gap-6 mt-6"
+                        initial={{opacity: 0}}
+                        whileInView={{opacity: 1}}
+                        viewport={{once: true}}
+                        transition={{delay: 0.4}}
+                    >
+                        <motion.a
+                            href="/projects"
+                            className="btn btn-primary px-8 py-4 text-lg text-primary-content"
+                            whileHover={{
+                                scale: 1.05,
+                                boxShadow: "0 5px 15px rgba(0,0,0,0.1)"
+                            }}
+                            whileTap={{scale: 0.98}}
+                            transition={{type: "spring", stiffness: 400}}
+                        >
+                            View Projects
+                        </motion.a>
+
+                        <motion.a
+                            href="/resume"
+                            className="btn btn-outline px-8 py-4 text-lg border-2 text-base-content hover:text-base-content"
+                            whileHover={{
+                                scale: 1.05,
+                                backgroundColor: "hsl(var(--b2))"
+                            }}
+                            whileTap={{scale: 0.98}}
+                            transition={{type: "spring", stiffness: 400}}
+                        >
+                            See Resume
+                        </motion.a>
+
+                        <motion.a
+                            href="/contact"
+                            className="btn btn-accent px-8 py-4 text-lg text-accent-content"
+                            whileHover={{
+                                scale: 1.05,
+                                boxShadow: "0 5px 15px rgba(0,0,0,0.1)"
+                            }}
+                            whileTap={{scale: 0.98}}
+                            transition={{type: "spring", stiffness: 400}}
+                        >
+                            Contact Me
+                        </motion.a>
+                    </motion.div>
                 </div>
             </div>
         </div>
