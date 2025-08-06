@@ -63,10 +63,10 @@ export default function Resume() {
                         >
                             <button
                                 onClick={() => handleCopy('email', email)}
-                                className="btn btn-outline btn-sm flex items-center gap-2"
+                                className="btn btn-outline btn-sm flex items-center gap-2 border-base-content hover:border-base-content"
                             >
-                                <FaEnvelope/>
-                                <span className="font-mono text-xs sm:text-sm">
+                                <FaEnvelope className={"text-base-content"}/>
+                                <span className="font-mono text-xs sm:text-sm text-base-content">
                   {email || 'Loading...'}
                 </span>
                             </button>
@@ -81,10 +81,10 @@ export default function Resume() {
                         >
                             <button
                                 onClick={() => handleCopy('github', 'github.com/thatdudegrantt')}
-                                className="btn btn-outline btn-sm flex items-center gap-2"
+                                className="btn btn-outline btn-sm flex items-center gap-2 border-base-content hover:border-base-content"
                             >
-                                <FaGithub/>
-                                <span>GitHub</span>
+                                <FaGithub className={"text-base-content"}/>
+                                <span className={"text-base-content"}>GitHub</span>
                             </button>
                         </motion.div>
 
@@ -97,10 +97,10 @@ export default function Resume() {
                         >
                             <button
                                 onClick={() => handleCopy('linkedin', 'linkedin.com/in/grant-polazzo')}
-                                className="btn btn-outline btn-sm flex items-center gap-2"
+                                className="btn btn-outline btn-sm flex items-center gap-2 border-base-content hover:border-base-content"
                             >
-                                <FaLinkedin/>
-                                <span>LinkedIn</span>
+                                <FaLinkedin className={"text-base-content"}/>
+                                <span className={"text-base-content"}>LinkedIn</span>
                             </button>
                         </motion.div>
                     </div>
