@@ -32,7 +32,7 @@ export default function Contact() {
                 {/* Compact Header */}
                 <div className="text-center">
                     <h1 className="text-3xl font-bold text-base-content mb-2">Let's Connect</h1>
-                    <p className="text-base-content/80">
+                    <p className="text-base-content opacity-80">
                         Reach out for opportunities or collaborations
                     </p>
                 </div>
@@ -140,7 +140,7 @@ export default function Contact() {
                 </div>
 
                 {/* Minimal Footer */}
-                <div className="text-center text-sm text-base-content/60">
+                <div className="text-center text-sm text-base-content opacity-60">
                     <p>I typically respond within 24 hours.</p>
                 </div>
             </div>
