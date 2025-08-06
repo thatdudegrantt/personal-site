@@ -136,10 +136,6 @@ export default function Contact() {
                                 </span>
                             </button>
                         </motion.div>
-
-                        <p className="text-xs text-base-content/60 mt-2">
-                            {copied ? "Email copied!" : "Click to copy address"}
-                        </p>
                     </div>
                 </div>
 
