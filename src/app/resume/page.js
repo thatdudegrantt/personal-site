@@ -66,7 +66,7 @@ export default function Resume() {
                                 className="btn btn-outline btn-sm flex items-center gap-2 border-base-content hover:border-base-content"
                             >
                                 <FaEnvelope className={"text-base-content"}/>
-                                <span className="font-mono text-xs sm:text-sm text-base-content">
+                                <span className="text-base-content">
                   {email || 'Loading...'}
                 </span>
                             </button>
