@@ -158,7 +158,7 @@ export default function Resume() {
                                 }
                             </div>
                             {expandedSections.clubs && (
-                                <p className="text-base-content mt-2">GT Developers, Video Games @ GT, GT esports, &
+                                <p className="text-base-content mt-2">GT Developers, Video Games @ GT, GT Esports, &
                                     multiple GT recreational sports clubs.</p>
                             )}
                         </div>
@@ -201,7 +201,7 @@ export default function Resume() {
                             <div className="flex justify-between items-start mb-2">
                                 <h3 className="text-xl font-bold text-base-content">PLANKTON COMPUTER VISION
                                     PROJECT</h3>
-                                <span className="text-sm text-base-content/70">Jan 2025 - Present</span>
+                                <span className="text-sm text-base-content opacity-70">Jan 2025 - Present</span>
                             </div>
                             <div className="flex flex-wrap gap-2 mb-3">
                                 <span className="badge badge-primary">Python</span>
@@ -228,7 +228,7 @@ export default function Resume() {
                             <div className="flex justify-between items-start mb-2">
                                 <h3 className="text-xl font-bold text-base-content">GAME BOY ADVANCE EMULATOR & FROGGER
                                     CLONE</h3>
-                                <span className="text-sm text-base-content/70">Mar 2025 - Apr 2025</span>
+                                <span className="text-sm text-base-content opacity-70">Mar 2025 - Apr 2025</span>
                             </div>
                             <div className="flex flex-wrap gap-2 mb-3">
                                 <span className="badge badge-primary">C</span>
@@ -257,7 +257,7 @@ export default function Resume() {
                             <div className="flex justify-between items-start mb-2">
                                 <h3 className="text-xl font-bold text-base-content">AUDIOSCAPE JOURNEY (CUSTOM SPOTIFY
                                     WRAPPED)</h3>
-                                <span className="text-sm text-base-content/70">Oct 2024 - Dec 2024</span>
+                                <span className="text-sm text-base-content opacity-70">Oct 2024 - Dec 2024</span>
                             </div>
                             <div className="flex flex-wrap gap-2 mb-3">
                                 <span className="badge badge-primary">Agile</span>
@@ -289,7 +289,7 @@ export default function Resume() {
                         >
                             <div className="flex justify-between items-start mb-2">
                                 <h3 className="text-xl font-bold text-base-content">ATLANTA FOOD FINDER</h3>
-                                <span className="text-sm text-base-content/70">Aug 2024 - Oct 2024</span>
+                                <span className="text-sm text-base-content opacity-70">Aug 2024 - Oct 2024</span>
                             </div>
                             <div className="flex flex-wrap gap-2 mb-3">
                                 <span className="badge badge-primary">Agile</span>
@@ -326,7 +326,7 @@ export default function Resume() {
                             <div className="flex justify-between items-start mb-2">
                                 <h3 className="text-xl font-semibold text-base-content">BARCELONA WINE BAR -
                                     WAITSTAFF</h3>
-                                <span className="text-sm text-base-content/70">Jun 2024 - Dec 2024</span>
+                                <span className="text-sm text-base-content opacity-70">Jun 2024 - Dec 2024</span>
                             </div>
                             <div className="flex flex-wrap gap-2 mb-3">
                                 <span className="badge badge-primary">Customer Service</span>
@@ -350,7 +350,7 @@ export default function Resume() {
                             <div className="flex justify-between items-start mb-2">
                                 <h3 className="text-xl font-semibold text-base-content">CITY OF ATLANTA, OFFICE OF THE
                                     MAYOR - EXECUTIVE INTERN</h3>
-                                <span className="text-sm text-base-content/70">Jan 2022 - Aug 2022</span>
+                                <span className="text-sm text-base-content opacity-70">Jan 2022 - Aug 2022</span>
                             </div>
                             <div className="flex flex-wrap gap-2 mb-3">
                                 <span className="badge badge-primary">Administration</span>
@@ -374,7 +374,7 @@ export default function Resume() {
                             <div className="flex justify-between items-start mb-2">
                                 <h3 className="text-xl font-semibold text-base-content">JON OSSOFF FOR US SENATE -
                                     CAMPAIGN VOLUNTEER</h3>
-                                <span className="text-sm text-base-content/70">Sep 2020 - Dec 2020</span>
+                                <span className="text-sm text-base-content opacity-70">Sep 2020 - Dec 2020</span>
                             </div>
                             <div className="flex flex-wrap gap-2 mb-3">
                                 <span className="badge badge-primary">Outreach</span>
