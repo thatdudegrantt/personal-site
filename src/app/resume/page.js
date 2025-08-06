@@ -24,8 +24,8 @@ export default function Resume() {
 
     // added expand sections
     const [expandedSections, setExpandedSections] = useState({
-        awards: false,
-        clubs: false
+        awards: true,
+        clubs: true
     });
     const toggleSection = (section) => {
         setExpandedSections(prev => ({
