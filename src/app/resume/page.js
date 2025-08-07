@@ -232,6 +232,7 @@ export default function Resume() {
                             </div>
                             <div className="flex flex-wrap gap-2 mb-3">
                                 <span className="badge badge-primary">C</span>
+                                <span className="badge badge-primary">Docker</span>
                                 <span className="badge badge-primary">Game Development</span>
                                 <span className="badge badge-primary">Low-level Programming</span>
                             </div>
