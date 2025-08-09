@@ -11,27 +11,36 @@ const content = [
         portrait: true
     },
     {
-        text: "filler",
+        text: "I am extremely passionate about building projects, solving problems, team collaboration, designing SAS products for clients, and continuing evolution as a software engineer!",
         image: "/images/gatechSports.png",
         portrait: true
     },
     {
-        text: "filler",
+        text: "My coursework has included advanced topics like Data Structures, Algorithms,\n" +
+            "   Object-Oriented Programming, and Agile Project Methodologies.\n",
         image: "/images/walkingPets.png",
         portrait: true
     },
     {
-        text: "filler",
-        image: "/images/homemadePho.png",
-        portrait: true
-    },
-    {
-        text: "filler",
+        text: "Beyond academics, I love working on personal coding projects that challenge me to\n" +
+            "learn new technologies and approaches. The process of taking an idea from concept\n" +
+            "to implementation is incredibly rewarding to me, and I'm always eager to take on\n" +
+            "new challenges that push my boundaries. Talk about Computer vision AI project for prince william sound\n",
         image: "/images/onCampus.png",
         portrait: true
     },
     {
-        text: "filler",
+        text: "When I'm not coding, you can find me working out, cooking new recipes (like this veggie pho I made), learning to\n" +
+            "   play guitar, or spending quality time with friends and family. I also enjoy\n" +
+            "   volunteering, canvassing for political candidates, and participating in community outreach programs whenever possible!\n",
+        image: "/images/homemadePho.png",
+        portrait: true
+    },
+    {
+        text: "I'm excited about opportunities where I can contribute my technical skills while\n" +
+            "continuing to grow as an engineer. I thrive in collaborative environments where\n" +
+            "teams work together to create something meaningful and I'm so excited to continue my path.\n" +
+            "Thank you for visiting my website!\n",
         image: "/images/vacation.png",
         portrait: true
     }
