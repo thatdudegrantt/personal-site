@@ -11,14 +11,14 @@ const content = [
         portrait: true
     },
     {
-        text: "I am extremely passionate about building projects, solving problems, team collaboration, designing SAS products for clients, and continuing evolution as a software engineer!",
+        text: "I am extremely passionate about building projects, solving problems, team collaboration, designing SAS products for clients, and continuing my evolution as a software engineer!",
         image: "/images/gatechSports.png",
         portrait: true
     },
     {
         text: "My coursework has included advanced topics like Data Structures, Algorithms,\n" +
             "   Object-Oriented Programming, and Agile Project Methodologies.\n",
-        image: "/images/walkingPets.png",
+        image: "/images/onCampus.png",
         portrait: true
     },
     {
@@ -26,7 +26,7 @@ const content = [
             "learn new technologies and approaches. The process of taking an idea from concept\n" +
             "to implementation is incredibly rewarding to me, and I'm always eager to take on\n" +
             "new challenges that push my boundaries. Talk about Computer vision AI project for prince william sound\n",
-        image: "/images/onCampus.png",
+        image: "/images/walkingPets.png",
         portrait: true
     },
     {
