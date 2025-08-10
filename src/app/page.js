@@ -50,7 +50,7 @@ export default function Home() {
     return (
         <div className="min-h-screen bg-base-200">
             <div className="max-w-7xl mx-auto px-6 py-24">
-                <div className="space-y-24 md:space-y-48">
+                <div className="space-y-24 md:space-y-48 text-base-content">
                     {content.map((item, i) => (
                         <motion.div
                             key={i}
