@@ -25,7 +25,7 @@ const content = [
         text: "Beyond academics, I love working on personal coding projects that challenge me to\n" +
             "learn new technologies and approaches. The process of taking an idea from concept\n" +
             "to implementation is incredibly rewarding to me, and I'm always eager to take on\n" +
-            "new challenges that push my boundaries. Talk about Computer vision AI project for prince william sound\n",
+            "new challenges that push my boundaries. One project I am working on & super excited to share is a computer vision to identify and label plankton\n",
         image: "/images/walkingPets.png",
         portrait: true
     },
