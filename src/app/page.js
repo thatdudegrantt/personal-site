@@ -5,7 +5,7 @@ import Image from 'next/image';
 const content = [
     // remember to add a professional headshot grant
     {
-        text: "My name is Grant Polazzo & I'm a rising senior at Georgia Tech majoring in\n" +
+        text: "My name is Grant Polazzo & I'm a senior at Georgia Tech majoring in\n" +
             "Computer Science with threads in Systems Architecture and Media.\n",
         image: "/images/careerFair.png",
         portrait: true
