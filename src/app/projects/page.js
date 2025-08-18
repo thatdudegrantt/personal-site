@@ -26,9 +26,10 @@ export default function Projects() {
             tech: ["Next.js", "Tailwind CSS", "Framer Motion"],
             date: "Aug 2025",
             description: [
-                "built with my own 2 hands - no ai, no premade websites but using next js is basically a premade site.",
+                "built with my own 2 hands - no ai, no premade website businesses.",
                 "Portfolio website presenting my projects and both my behavioral & technical skills",
                 "Features a responsive design & interactive elements with smooth animations",
+                "Utilizes Hashmaps for code to help make it more OOP",
                 "Hosted & secured with Vercel and updated regularly"
             ]
         },
