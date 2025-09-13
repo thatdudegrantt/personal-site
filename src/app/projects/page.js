@@ -79,7 +79,8 @@ export default function Projects() {
         <div className="min-h-screen bg-base-200 p-8">
             <div className="max-w-6xl mx-auto">
                 <h1 className="text-4xl font-bold text-base-content mb-2">My Projects</h1>
-                <p className="text-lg text-base-content mb-8"> Projects sorted by date (newest first).</p>
+                <p className="text-lg text-base-content mb-8"> Projects sorted by date (Last updated June 2025).</p>
+
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {projects.map((project, index) => (
