@@ -2,6 +2,16 @@
 export default function Projects() {
     const projects = [
         {
+            title: "Yellow Jacket Roller Derby Practice Planner",
+            tech: ["Typescript", "Next.js", "Vercel"],
+            date: "Present",
+            description: [
+                "Developed a fullstack app utilizing next.js front end styling with a database storing user accounts, specific user data, practice plan creation, and an ability to export to share with the active userbase.",
+                "Collaborated with executive board members on designing the user interface & user stories. ",
+                "Deploying via Vercel & secured via an SSL encryption."
+            ]
+        },
+        {
             title: "Georgia Tech Robojackets Team & Inventory Management",
             tech: ["Next.js", "TypeScript", "PocketBase", "Mantine UI"],
             date: "Aug 2025 - Present",
@@ -25,7 +35,7 @@ export default function Projects() {
         },
         {
             title: "Personal Website (this site)",
-            tech: ["Next.js", "Tailwind CSS", "Framer Motion"],
+            tech: ["Next.js", "Tailwind CSS", "Framer Motion", "Vercel"],
             date: "Aug 2025",
             description: [
                 "Portfolio website presenting my projects and both my behavioral & technical skills",
