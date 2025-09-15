@@ -2,6 +2,18 @@
 export default function Projects() {
     const projects = [
         {
+            title: "Georgia Tech Robojackets Team & Inventory Management",
+            tech: ["Next.js", "TypeScript", "PocketBase", "Mantine UI"],
+            date: "Aug 2025 - Present",
+            description: [
+                "Developed a fullstack app utilizing next.js front end styling with a database storing user accounts, specific user data, practice plan creation, and an ability to export to share with the active userbase.\n",
+                "Implemented and populated a real-time data verification system to validate and ensure accuracy of user information.",
+                "Collaborated with a co-developer and club leaders to launch an online registration system adopted by 100% of active users and managed by admin.",
+                "Spearheaded Frontend UI changes that increased retention of our app among club members.\n",
+                "Restructured code as generics, split displayed data into pages, and maintained real-time updates with solid OOP coding practices."
+            ]
+        },
+        {
             title: "Plankton Computer Vision Project",
             tech: ["Python", "Jupyter Notebooks", "Computer Vision"],
             date: "Jan 2025 - Present",
