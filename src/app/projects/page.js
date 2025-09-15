@@ -12,16 +12,6 @@ export default function Projects() {
             ]
         },
         {
-            title: "2D GameBoy Advanced System & Custom Frogger Game",
-            tech: ["C", "Docker", "Game Development", "Low-level Programming"],
-            date: "Mar 2025",
-            description: [
-                "Implemented GBA hardware-level features including DMA and memory-mapped I/O",
-                "Developed my own Frogger clone with custom collision detection, assets, and state-machine game logic",
-                "Optimized for GBA hardware constraints"
-            ]
-        },
-        {
             title: "Personal Website (this site)",
             tech: ["Next.js", "Tailwind CSS", "Framer Motion"],
             date: "Aug 2025",
@@ -29,6 +19,16 @@ export default function Projects() {
                 "Portfolio website presenting my projects and both my behavioral & technical skills",
                 "Features a responsive design & interactive elements with smooth animations",
                 "Hosted & secured with Vercel and updated regularly"
+            ]
+        },
+        {
+            title: "2D GameBoy Advanced System & Custom Frogger Game",
+            tech: ["C", "Docker", "Game Development", "Low-level Programming"],
+            date: "Mar 2025",
+            description: [
+                "Implemented GBA hardware-level features including DMA and memory-mapped I/O",
+                "Developed my own Frogger clone with custom collision detection, assets, and state-machine game logic",
+                "Optimized for GBA hardware constraints"
             ]
         },
         {
