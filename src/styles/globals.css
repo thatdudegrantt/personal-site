@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Resume heading/text color variables — used in resume page */
+:root,
+[data-theme="light"] {
+  --resume-heading: #291334;
+  --resume-text: #4b5563;
+}
+
+[data-theme="dark"] {
+  --resume-heading: var(--bc);
+  --resume-text: var(--bc);
+}

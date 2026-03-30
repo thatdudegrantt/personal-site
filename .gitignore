@@ -1,5 +1,3 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
 # dependencies
 /node_modules
 /.pnp
@@ -13,7 +11,11 @@
 # testing
 /coverage
 
-# next.js
+# Astro build output
+/dist
+/.astro
+
+# Next.js (keeping so old build cache stays ignored if .next still exists)
 /.next/
 /out/
 
@@ -30,11 +32,14 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
+# env files
 .env*
 
-# vercel
+# Vercel (can remove this line if you want, but harmless to keep)
 .vercel
+
+# Cloudflare
+.wrangler
 
 # typescript
 *.tsbuildinfo

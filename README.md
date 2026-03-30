@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Personal Site — Astro + Cloudflare Pages
 
-## Getting Started
+Migrated from Next.js/Vercel to Astro/Cloudflare Pages bc of vercel's political beliefs.
 
-First, run the development server:
+## Local Development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:4321
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Deploying to Cloudflare Pages
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### First time setup
 
-## Learn More
+1. Push this repo to GitHub (keep it public or private — your choice)
+2. Go to [Cloudflare Pages](https://pages.cloudflare.com/) → Create application → Pages → Connect to Git
+3. Select your repo
+4. Use these build settings:
+   - **Framework preset**: Astro
+   - **Build command**: `npm run build`
+   - **Build output directory**: `dist`
+5. Click Save & Deploy — done!
 
-To learn more about Next.js, take a look at the following resources:
+Every push to `main` automatically redeploys.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Enabling the Cloudflare adapter (optional)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Only needed if you add server-side routes (API endpoints, SSR pages).
+For a static portfolio site you don't need it.
 
-## Deploy on Vercel
+If you do want it later, in `astro.config.mjs`:
+```js
+import cloudflare from '@astrojs/cloudflare';
+// ...
+output: 'server',
+adapter: cloudflare(),
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Adding GitHub links to project cards
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+In `src/pages/projects.astro`, find the project and uncomment/add the `github` field:
+
+```js
+{
+  title: "My Project",
+  // ...
+  github: "https://github.com/thatdudegrantt/my-project",
+}
+```
+
+- **Public repos**: visitors can browse your code ✅
+- **Private repos**: card still links out, but visitors see a 404 — use sparingly
+
+## File structure
+
+```
+src/
+├── layouts/
+│   └── Layout.astro        ← Navbar + theme toggle (replaces next-themes)
+├── pages/
+│   ├── index.astro         ← Homepage
+│   ├── projects.astro      ← Projects grid ← ADD GITHUB LINKS HERE
+│   ├── resume.astro        ← (migrate from src/app/resume/page.js)
+│   └── contact.astro       ← (migrate from src/app/contact/page.js)
+├── components/
+│   ├── HomeContent.jsx     ← Framer Motion home sections
+│   └── ProjectCard.jsx     ← Truncated descriptions + clickable card
+└── styles/
+    └── globals.css
+```
+
+## Still need to migrate
+
+- `src/app/resume/page.js` → `src/pages/resume.astro`
+- `src/app/contact/page.js` → `src/pages/contact.astro`
+- `src/components/Navbar.js` → already replaced by Layout.astro's built-in navbar
+- `src/components/ThemeProvideWrapper.js` → replaced by Layout.astro's inline script
+
+Send those files when ready!
